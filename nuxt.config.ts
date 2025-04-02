@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   components: true, // Автоимпорт компонентов
   modules: [
     '@vueuse/nuxt',
-    // '@nuxt/fonts',
+    '@nuxt/fonts',
     '@nuxt/image',
     '@pinia/nuxt',
     'dayjs-nuxt',
@@ -26,6 +26,7 @@ export default defineNuxtConfig({
   families: [
     { name: 'montserrat', provider: 'google' },
     { name: 'geist', provider: 'google' },
+    { name: 'manrope', provider: 'google' },
   ],
   css: ['~/assets/scss/global.scss'],
   vite: {
