@@ -1,0 +1,29 @@
+@use "vars";
+@use "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Geist, sans-serif;
+  color: $primary;
+}
+
+html, body {
+  width: 100%;
+  height: 100dvh;
+  font-size: 10px;
+}
+
+input, textarea, select {
+  outline: none;
+}
+
+input, textarea, select, button {
+  background: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}

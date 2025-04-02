@@ -1,0 +1,30 @@
+@use "vars";
+
+
+$breakpoints: (
+        mobile: 767px,
+        tablet: 1025px,
+        desktop: 1440px,
+        desktopLg: 1920px,
+);
+
+@mixin Title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -.0.03em;
+}
+
+@mixin respond-to($name) {
+  $max: map-get($breakpoints, $name);
+
+  @if $max {
+    @media only screen and (max-width: $max) {
+      @content;
+    }
+  }
+
+  @else {
+    @content;
+  }
+}
