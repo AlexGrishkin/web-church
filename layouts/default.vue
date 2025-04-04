@@ -1,26 +1,15 @@
 <template>
-  <div :class="$style.Container">
-    <div :class="$style.mainContent">
-      <div :class="$style.pageContainer">
-        <nuxt-page />
-      </div>
-    </div>
+  <Header />
+  <div :class="$style.pageContainer">
+    <nuxt-page />
   </div>
 </template>
 <script setup lang="ts">
+import Header from '~/components/Header.vue';
 </script>
 
 <style lang="scss" module>
-.Container {
-  display: flex;
-}
-
-.mainContent {
-  width: 100%;
-}
-
 .pageContainer {
   width: 100%;
-  padding: 3rem;
 }
 </style>

@@ -20,3 +20,9 @@ $bp-super-big: 1920px;
     }
   }
 }
+
+
+@mixin layoutHorizontal() {
+  padding-left: 140px;
+  padding-right: 140px;
+}
